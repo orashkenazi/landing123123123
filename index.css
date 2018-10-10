@@ -1,0 +1,53 @@
+body{ margin:0;}
+
+.letters_container {
+    height:100%;
+    width:100%;
+    background:rgb(255, 255, 255);
+    overflow-y:hidden;
+    overflow-x:hidden;
+  
+}
+
+.backletter {
+   
+    display:inline-block;
+    font-size:1vw;
+    height:1.3vw;
+    width:1%;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 100%;
+    font-family: 'Raleway';
+  
+}
+
+.backletter_A{
+  
+    color:rgba(245, 245, 245, 0.5);
+    font-weight:400;
+}
+
+.backletter_C{
+   
+    color:rgb(231, 231, 231, 0.5);
+    font-weight:400;
+}
+
+.backletter_G{
+
+    color:rgb(219, 218, 218, 0.5);
+    font-weight:400;
+}
+
+.backletter_T{
+  
+    color:rgb(236, 235, 235, 0.5);
+    font-weight:400;
+}
+
+.text_letters {
+    color:black;
+    font-weight:500;
+}
+
