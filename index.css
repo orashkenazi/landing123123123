@@ -35,6 +35,15 @@
       height:100%;
   }
 
+  .container_div_portrait{
+      
+    min-width:100%;
+
+    display:grid;
+    grid-template-rows: 55% auto;
+    height:150%;
+}
+
   .div1{
     position:relative;
    

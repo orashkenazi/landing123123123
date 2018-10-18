@@ -129,12 +129,42 @@ setInterval(function() {
 
 
 
-//check screen ratio
+//portrait/landscape
+
+function changeView(viewMode){
+  if (viewMode === 'portrait') {
+    document.getElementById("container_div").classList.remove("container_div");
+    document.getElementById("container_div").classList.add("container_div_portrait");
+  }
+
+  if (viewMode === 'landscape') {
+    document.getElementById("container_div").classList.add("container_div");
+    document.getElementById("container_div").classList.remove("container_div_portrait");
+  }
+}
+
+
+function checkAndSetView(){
+
+  if( (document.body.clientWidth / document.body.clientHeight)  < 1)  {
+  
+    changeView('portrait')
+    
+     
+    }
+  
+    else {
+      changeView('landscape')
+    }
+
+}
+
+checkAndSetView();
 
 window.addEventListener('resize', ()=> {
- if(document.getElementById("div1").getBoundingClientRect().width <300) {
-   console.log('miaw')
-  
-   document.getElementById("container_div").style.gridTemplateColumns ='350px auto';
-  }
+
+  checkAndSetView();
+
 })
+
+
