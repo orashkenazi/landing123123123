@@ -74,7 +74,7 @@
 
   .counters{
     display:grid;
-    padding-top:20px;
+    padding-top:0px;
     max-width:75%;
     width:75%;
     grid-template-columns: auto auto auto auto;
