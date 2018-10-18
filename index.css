@@ -1,6 +1,11 @@
 .blinkingLine {
-    font-weight:700;
+ 
     animation: blinker 1s step-start infinite;
+    
+    font-size:4px;
+    background:black;
+    
+    
   }
 
   
@@ -69,9 +74,9 @@
 
   .counters{
     display:grid;
-    padding-top:100px;
-    max-width:70%;
-    width:70%;
+    padding-top:20px;
+    max-width:75%;
+    width:75%;
     grid-template-columns: auto auto auto auto;
     
   }
@@ -183,28 +188,28 @@
       
         color:(165,164,162);
         font-weight:400;
-        opacity:0.1;
+        opacity:0.12;
     }
     
     .backletter_C{
        
         color:(152,126,109);
         font-weight:400;
-        opacity:0.1;
+        opacity:0.12;
     }
     
     .backletter_G{
     
         color:rgb(94,94,60);
         font-weight:400;
-        opacity:0.1;
+        opacity:0.12;
     }
     
     .backletter_T{
       
         color:rgb(239, 224, 191);
         font-weight:400;
-        opacity:0.3;
+        opacity:0.55;
     }
     
     .text_letters {
