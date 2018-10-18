@@ -126,3 +126,15 @@ setInterval(function() {
        $('#seconds').attr('data-pct',s);
  
 }, 1000); // update about every seconds
+
+
+
+//check screen ratio
+
+window.addEventListener('resize', ()=> {
+ if(document.getElementById("div1").getBoundingClientRect().width <300) {
+   console.log('miaw')
+  
+   document.getElementById("container_div").style.gridTemplateColumns ='350px auto';
+  }
+})
