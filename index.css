@@ -1,53 +1,243 @@
-body{ margin:0;}
+.blinkingLine {
+    font-weight:700;
+    animation: blinker 1s step-start infinite;
+  }
 
-.letters_container {
-    height:100%;
-    width:100%;
-    background:rgb(255, 255, 255);
-    overflow-y:hidden;
-    overflow-x:hidden;
   
-}
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
 
-.backletter {
+  body {
+      margin:0;
+      font-family: 'Montserrat','Arial';
+      
+  }
+
+  h1{
+    font-size:2em;
+  }
+ p{
+   font-weight:400;
+ }
+
+  .container_div{
+      
+      min-width:100%;
+ 
+      display:grid;
+      grid-template-columns: 35% auto;
+      height:100%;
+  }
+
+  .div1{
+    position:relative;
+    padding:10%;
+  
+  }
+
+  .div2{
+    
+    background-image: url("dna-darker.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+
+
+
+  }
+
+  .counters{
+    display:grid;
+    padding-top:100px;
+    max-width:70%;
+    width:70%;
+    grid-template-columns: auto auto auto auto;
+    
+  }
+
+  .inputText {
+    background:ghostwhite;
+    border:0px;
+    border-radius:5px;
+    padding:8px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+  }
+
+  .inputButton {
+    background:rgba(44, 44, 44, 0.767);
+    color:ghostwhite;
+    border:0px;
+    border-radius:5px;
+    padding:8px;
+    cursor: pointer;
+    box-sizing: border-box;
+    display: block;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+  }
+
+  .inputButton:hover{
+    background: gainsboro !important;
+    color:black !important;
    
-    display:inline-block;
-    font-size:1vw;
-    height:1.3vw;
-    width:1%;
-    text-align: center;
-    vertical-align: middle;
-    line-height: 100%;
-    font-family: 'Raleway';
-  
-}
 
-.backletter_A{
-  
-    color:rgba(245, 245, 245, 0.5);
-    font-weight:400;
-}
+  }
 
-.backletter_C{
+  
+
+  .disagree:hover{
+    text-decoration: underline;
+  }
+
+  .disclaimer{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+    background:rgba(44, 44, 44);
+    color:ghostwhite;
+    font-size:12px;
+    border:0px;
+    border-radius:5px;
+    text-align:justify;
+    cursor: pointer;
+    box-sizing: border-box;
+    position: absolute;
+    right:0;
+    bottom:0;
+    width:0px;
+    max-height:0px;
+    overflow: hidden;
+    
+    
+    
+    
+  }
+
+  .disclaimer.on {
+    width: 105%;
+   max-height:500px;
+   padding:20px;
+   transition:max-height 0.3s linear,width 0.1s linear, bottom 0.1s linear, right 0.1s linear;
+   bottom:-50px;
+   right:-5px;
+
    
-    color:rgb(231, 231, 231, 0.5);
-    font-weight:400;
-}
 
-.backletter_G{
+   
+  }
 
-    color:rgb(219, 218, 218, 0.5);
-    font-weight:400;
-}
 
-.backletter_T{
-  
-    color:rgb(236, 235, 235, 0.5);
-    font-weight:400;
-}
+  /* backletters */
 
-.text_letters {
-    color:black;
-    font-weight:500;
-}
 
+    
+    .letters_container {
+      position:absolute;
+      top:0;
+      left:0;
+    
+        height:100%;
+        width:100%;
+        background:rgb(255, 255, 255);
+        overflow-y:hidden;
+        overflow-x:hidden;
+      
+    }
+    
+    .backletter {
+       
+        display:inline-block;
+        font-size:14px;
+        height:25px;
+        width:20px;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 25px;
+        font-family: 'Raleway';
+        cursor: default;
+        
+        
+      
+    }
+    
+    .backletter_A{
+      
+        color:(165,164,162);
+        font-weight:400;
+        opacity:0.1;
+    }
+    
+    .backletter_C{
+       
+        color:(152,126,109);
+        font-weight:400;
+        opacity:0.1;
+    }
+    
+    .backletter_G{
+    
+        color:rgb(94,94,60);
+        font-weight:400;
+        opacity:0.1;
+    }
+    
+    .backletter_T{
+      
+        color:rgb(239, 224, 191);
+        font-weight:400;
+        opacity:0.3;
+    }
+    
+    .text_letters {
+        color:black;
+        font-weight:500;
+    }
+    
+    
+    
+    .backletter:hover{
+        background:rgba(179, 179, 179, 1);
+        opacity:1 !important;
+    
+        
+    }
+    
+    .inputSymbol {
+        background:black;
+        position:relative;
+        left:+1.1vw;
+        top:-0.5vw;
+        height:0.3vw;
+        width:90%;
+        opacity:1;
+    }
+    
+    
+    .markA ~ .backletter_A {
+        opacity:0.1;
+        background:rgba(179, 179, 179, 1)
+    }
+    
+    .markC ~ .backletter_C {
+        opacity:0.1;
+        background:rgba(179, 179, 179, 1)
+      }
+    
+      .markG ~ .backletter_G {
+        opacity:0.1;
+        background:rgba(179, 179, 179, 1)
+      }
+    
+      .markT ~ .backletter_T {
+        opacity:0.1;
+        background:rgba(179, 179, 179, 1)
+      }
+
+      

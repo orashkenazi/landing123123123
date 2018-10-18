@@ -1,14 +1,161 @@
 <html>
     <head>
         <link rel="stylesheet" href="./index.css">
+        <link href="./progress.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700" rel="stylesheet">
     </head>
     <body>
-        <div id="lettersContainer" class="letters_container">
+  
+      
+    <div class="container_div">
+            <div id="div1" class="div1">
+                    <div id="lettersContainer" class="letters_container">
+                            <div id="marker"></div>
+                    </div>
 
-        </div>
+                    <img src="Odmachine-logo-trans.png" style="width:70%; position:relative; left:-7%; z-index:+1;" >
 
-        <img src="884607308-1024x1024.png" style="height:15vw; position:absolute; z-index:+1; bottom:3%; right:5%;">
+                    
+                    <div id="text" style="pointer-events: none; position:absolute; top:0; left:0; height:100%; z-index:+1;  display:flex; align-items: center; ">
+                               
+
+                               <div style="padding:10%; min-height:500px; ">
+
+                                       <BR><BR>
+                                <h1>
+                                Under<BR>
+                                Construction 
+                                </h1>
+                    
+                                <p style="font-size:16px; line-height:22px;">
+                                        Hi Folks! 
+                                    <BR><BR>
+                                        We'll be back soon to continue changing the world of genetic BIG DATA. Our ninjas are working hard on our new website, and it will be on the air soon.
+                                    <BR><BR>
+                                        In the meantime, if you are as excited as we are, and want to get in touch, you can reach us at: <span style="pointer-events:all; font-weight:500; white-space: nowrap">change@od-machine.com</span>
+                                    <br><BR>
+                                    Thank you for your patience! 
+                    
+
+                                    
+
+ 
+
+
+
+                                    <BR><BR><BR>
+                                    <span style="font-weight:700;">ODMachine team </span> <span class="blinkingLine">_</span>
+                                </p>
+                        </div>
+                    </div>
+
+                   
+                </div>
+        
+                <div id="div2" class="div2">
+                   
+                              
+                   <div id="counters" class="counters">
+                               
+                                    
+                        <div id="days" class="cont" data-pct="100" data-type="Days">
+                                        <svg id="svg_d" style="width:100%" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                                <circle r="40" cx="50" cy="50" fill="transparent"  stroke-dashoffset="0"></circle>
+                                                <circle class="cbar" id="bar_d" r="40" cx="50" cy="50" fill="transparent" stroke-dasharray="251.2" stroke-dashoffset="0" transform ="rotate(-90, 50,50)"></circle>
+                                                </svg>
+                        </div>
+
+                        <div id="hours" class="cont" data-pct="24"  data-type="Hours">
+                                        <svg id="svg_h" style="width:100%;" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                                <circle r="40" cx="50" cy="50" fill="transparent"  stroke-dashoffset="0"></circle>
+                                                <circle class="cbar" id="bar_h" r="40" cx="50" cy="50" fill="transparent" stroke-dasharray="251.2" stroke-dashoffset="0" transform ="rotate(-90, 50,50)"></circle>
+                                                </svg>
+                        </div>
+
+                        <div id="minutes" class="cont" data-pct="60"  data-type="Minutes">
+                                        <svg id="svg_m"style="width:100%;" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                                <circle r="40" cx="50" cy="50" fill="transparent"  stroke-dashoffset="0"></circle>
+                                                <circle class="cbar" id="bar_m" r="40" cx="50" cy="50" fill="transparent" stroke-dasharray="251.2" stroke-dashoffset="0" transform ="rotate(-90, 50,50)"></circle>
+                                                </svg>
+                        </div>
+
+                        <div id="seconds" class="cont" data-pct="60"  data-type="Seconds">
+                                        <svg id="svg_s" style="width:100%;" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                        <circle r="40" cx="50" cy="50" fill="transparent"  stroke-dashoffset="0"></circle>
+                                        <circle class="cbar" id="bar_s" r="40" cx="50" cy="50" fill="transparent" stroke-dasharray="251.2" stroke-dashoffset="0" transform ="rotate(-90, 50,50)"></circle>
+                                        </svg>
+                        </div>
+
+                       
+                                
+                   </div>
+              
+
+                   <div id="subscribeForm" style="width:70%; position:relative;">
+                                <br>  <br>
+                                <p style="color:white; text-shadow: 0 0 8px #000000;">
+                                                Subscribe here for early notification when our website goes live:
+                                </p>
+                              
+
+                                       
+                        
+                                        <div id="inputs" style=" width:100%; display:grid;  grid-template-columns: 22% 22% 42% auto; grid-column-gap:5px; position:relative;">
+                                                <div>
+                                                <input class="inputText" type="text" placeholder="First Name" style="width:100%">
+                                                </div>
+                                                <div>
+                                                        <input class="inputText" type="text" placeholder="Last Name" style="width:100%">
+                                                </div>
+                                                <div>
+                                                        <input class="inputText" type="email" placeholder="Email" style="width:100%"> 
+                                                </div>
+                                                <div>
+                                                                <button class="inputButton"  style="width:100%; " onclick="document.getElementById('disclaimer').classList.add('on');">Submit</button>
+                                                                
+                                                </div>
+                                              
+                                               
+                                                <div id="disclaimer" class="disclaimer" style="position:absolute;">
+                                                
+
+                                                  
+                                                                <p>
+                                                                        By clicking the “I Accept” button, you hereby agree that we may use your contact details you provided us with for the purpose of providing you commercial and/or non-commercial materials (including updates and our Newsletter) related to our current and/or future products and services. You may withdraw your consent by sending a written notice to our
+                                                                        Email address that appears below, or alternatively follow the instructions for
+                                                                        removing yourself from mailing list which are available in the message transmitted to you.
+                                                                        
+                                                                </p>
+                                                                <BR>
+                                                                        <div id="disclaimerButtons" style="width:100%; line-height:30px; height:30px; vertical-align:middle;" >
+                                                                              
+                                                                                <button class="inputButton" style="float:right; margin-left:20px; background: rgb(241,161,97); color:black; font-weight:600;">I Accept</button>
+                                                                                <a class="disagree" onclick="document.getElementById('disclaimer').classList.remove('on');" style="float:right">I Disagree  </a>
+                                                                        </div>
+                                                                    
+        
+                                                                
+                                            
+                                                </div>
+                                              
+                                            
+                                              
+                                           </div>
+
+                                          
+
+                   </div>
+                  
+
+                   
+
+
+                </div>
+    </div>
+       
+   <script src="./js/index.js"></script>
     </body>
-    <script src="app.js"></script>
+
 </html>
