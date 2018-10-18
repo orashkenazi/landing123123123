@@ -1,7 +1,7 @@
 
 svg circle {
     
-    transition: stroke-dashoffset 1s linear;
+    transition: stroke-dashoffset 0s linear;
     stroke: rgb(179, 179, 179);
     stroke-width: 0.2em;
 
@@ -39,3 +39,7 @@ svg circle {
    
   }
   
+
+ 
+
+

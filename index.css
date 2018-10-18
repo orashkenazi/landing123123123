@@ -23,6 +23,9 @@
    font-weight:400;
  }
 
+ .leftContent {
+   pointer-events: none; position:absolute; top:0; left:0; height:100%; width:100%; z-index:+1;  display:flex; align-items: center; 
+ }
   .container_div{
       
       min-width:100%;
@@ -34,7 +37,7 @@
 
   .div1{
     position:relative;
-    padding:10%;
+   
   
   }
 
@@ -123,8 +126,8 @@
   .disclaimer.on {
     width: 105%;
    max-height:500px;
-   padding:20px;
-   transition:max-height 0.3s linear,width 0.1s linear, bottom 0.1s linear, right 0.1s linear;
+   padding:30px;
+   transition:max-height 0.2s linear,width 0.1s linear, bottom 0.1s linear, right 0.1s linear;
    bottom:-50px;
    right:-5px;
 
